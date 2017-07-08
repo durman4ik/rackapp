@@ -1,0 +1,13 @@
+%h2 Users
+
+- @users.each do |user|
+  .user
+    %label Name:
+    = user.name
+    %a{ href: "/users/edit?id=#{user.id}", class: 'link-button' }
+      Edit
+    %form{ action: 'delete', method: 'POST', class: 'delete-form' }
+      %input{ type: 'hidden', name: 'id', value: user.id }
+      %input{ type: 'submit', class: 'link-button', value: 'Delete' }
+
+

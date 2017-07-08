@@ -1,0 +1,17 @@
+!!!
+%html
+  %head
+    %meta{ charset: 'utf-8' }
+    %title Welcome Friend
+    %link{ rel: 'stylesheet', type: 'text/css', href: '/css/style.css' }
+  %body
+    .header
+      .logo
+        %a{ href: '/' }
+          %img{ src: '/images/logo.png', title: 'Go Home!' }
+      .menu
+        %a{ href: '/users' } All users
+        %a{ href: '/users/new' } New User
+
+    .container
+      = yield

@@ -1,0 +1,77 @@
+/* reset */
+
+* { margin: 0; padding: 0; }
+p { margin: 5px 0 10px 0; }
+
+/* styles */
+
+div, p {
+    font-size: 18px;
+}
+
+body {
+    background: #1c1c1c;
+}
+
+.header {
+    background: #ffffff;
+    padding: 10px;
+    height: 70px;
+    width: 100%;
+    box-shadow: 1px 1px 4px white;
+}
+
+.header .logo {
+    position: relative;
+    margin: 0 30px;
+    float: left;
+    display: block;
+}
+
+.header .logo img {
+    width: 70px;
+}
+
+.header > a {
+    display: inline-block;
+}
+
+.menu {
+    display: block;
+    float: left;
+    height: 100%;
+    margin: -10px -10px -10px 40px;
+}
+
+.menu a {
+    height: 50px;
+    padding: 30px 10px 10px;
+    display: inline-block;
+}
+
+.menu a:hover {
+    background: whitesmoke;
+}
+
+.container {
+    margin: 50px 90px;
+    color: white;
+}
+
+.container a {
+    color: gray;
+}
+
+.delete-form {
+    width: 50px;
+    display: inline-block;
+}
+
+.link-button {
+    background: none;
+    border: none;
+    font-size: 13px;
+    color: gray;
+    text-decoration: none;
+    cursor: pointer;
+}

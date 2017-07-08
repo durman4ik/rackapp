@@ -1,0 +1,6 @@
+%h2 New user creation
+%form{ action: 'update', method: 'POST' }
+  %label Name
+  %input{ type: 'hidden', name: 'id', value: @user.id }
+  %input{ type: 'text', name: 'name', value: @user.name }
+  %input{ type: 'submit' }
